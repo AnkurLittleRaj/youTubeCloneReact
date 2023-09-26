@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import VideoCard from './VideoCard'
  import ButtonFunc from './ButtonFunc'
 import { YOUTUBE_VIDEOS_API } from '../utils/constants';
+import CommentContainer from "./CommentContainer"
 
 
 
@@ -31,6 +32,7 @@ let filterredArray =[];
   }
   return (
     <div className='col-span-11 p-2'>
+          <CommentContainer />
       {/* <div className='grid grid-cols-12'> */}
  <div className=' flex justify-between'>
 <ButtonFunc name='Sports'/>
@@ -50,6 +52,8 @@ let filterredArray =[];
   })}
   
       </div>
+
+  
       </div>
       
     // </div>
